@@ -32,7 +32,7 @@ async function fetchHtml(url) {
 }
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(PUBLIC_DIR, 'index.html'));
+  res.sendFile(path.join(process.cwd(), 'index.html'));
 });
 
 // ==========================================
