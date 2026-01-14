@@ -30,6 +30,10 @@ async function fetchHtml(url) {
     }
 }
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(PUBLIC_DIR, 'index.html'));
+});
+
 // ==========================================
 // 1. ENDPOINT: ON-GOING ANIME
 // ==========================================
